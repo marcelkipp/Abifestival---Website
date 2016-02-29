@@ -1,0 +1,29 @@
+nav {
+  background-color: white;
+  border-bottom: 1px solid black; }
+  nav img {
+    height: 50px; }
+  nav ul li {
+    font-size: 20px; }
+
+.container-video h1 {
+  font-size: 65px; }
+
+.btn-video {
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 40px; }
+
+.section-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../src/img/bg-section.png);
+  background-size: cover; }
+  .section-intro .inner {
+    text-align: center;
+    color: white;
+    font-size: 20px; }

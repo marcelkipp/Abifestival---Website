@@ -2,16 +2,48 @@
 
 html 
   head
-  title Abifestival
-  style
-    include ../css/layout.css
-    include ../css/style.css
-    include ../bootstrap/css/bootstrap.css      
-    include ../bootstrap/css/bootstrap-theme.css    
+    title Abifestival
+    link(rel='stylesheet', href='css/layout.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap-theme.css')
   body
+    //- nav hallo
+    nav
+      .wrapper
+        img(src="src/img/logo.png")
+        ul
+          li Bandinfos
+          li Anfahrt
+          li Gel&auml;nde
+          li Zelten
+          li Fragen
+          li Sponsoren 
+          li Mehr
+  
     .video-overlay
-    video(autoplay)
+    video(autoplay, loop)
       source(src="src/video/background.mp4", type="video/mp4")
-      
-    script(src='../bootstrap/js/bootstrap.js')
-    script(src='..js/script.js')
+    
+    .content-container
+      .container-video
+        div#animate
+          img(src="src/img/logo.png")
+          h1 Abifestival 2016
+          h3 umsonst & und drau&szlig;en 
+          button.btn-video Alle Infos
+      .container-other
+        .section-intro 
+          .wrapper
+            .inner
+              p Abifestival am alten AKW in Lingen!
+              p Willkommen auf den Internetseiten des Abifestivals! Hier erfährst du alles, was du über das Abifestival wissen musst. Sollte etwas fehlen, oder unklar sein, melde dich bei uns.
+              p Das Abifestival ist einzigartig.
+              p Das Abifestival ist mit Liebe gemacht!
+              p Wir hoffen, dass du dich bei uns wohl fühlst. 
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='bootstrap/js/bootstrap.js')
+    script(src='js/script.js')
+    script(src='js/jquery.sticky.js')
+    
