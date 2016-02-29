@@ -1,6 +1,7 @@
 nav {
   background-color: white;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid black;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.15); }
   nav img {
     height: 50px; }
   nav ul li {
@@ -25,5 +26,14 @@ nav {
   background-size: cover; }
   .section-intro .inner {
     text-align: center;
-    color: white;
+    color: #333333;
     font-size: 20px; }
+    .section-intro .inner div {
+      font-size: 40px;
+      margin-bottom: 40px; }
+
+.gridster ul {
+  list-style: none; }
+  .gridster ul li {
+    background-color: gray;
+    cursor: pointer; }

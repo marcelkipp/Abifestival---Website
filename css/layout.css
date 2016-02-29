@@ -75,8 +75,17 @@ nav.fixed {
   width: 100%;
   background-color: gray; }
 
-.section-intro {
+.section-intro, .section-lineup {
   padding: 100px 0; }
+
+.section-lineup {
+  background-color: white; }
+
+.section-banner {
+  background-image: url(../src/img/banner.jpg);
+  background-size: cover;
+  height: 500px;
+  cursor: pointer; }
 
 .animated {
   -webkit-animation-duration: 1s;

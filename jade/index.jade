@@ -7,6 +7,7 @@ html
     link(rel='stylesheet', href='css/style.css')
     link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
     link(rel='stylesheet', href='bootstrap/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='css/gridster.css')
   body
     //- nav hallo
     nav
@@ -36,14 +37,47 @@ html
         .section-intro 
           .wrapper
             .inner
-              p Abifestival am alten AKW in Lingen!
-              p Willkommen auf den Internetseiten des Abifestivals! Hier erfährst du alles, was du über das Abifestival wissen musst. Sollte etwas fehlen, oder unklar sein, melde dich bei uns.
+              div Abifestival am alten AKW in Lingen!
+              p Willkommen auf den Internetseiten des Abifestivals! Hier erf&auml;hrst du alles, was du &uuml;ber das Abifestival wissen musst. Sollte etwas fehlen, oder unklar sein, melde dich bei uns.
               p Das Abifestival ist einzigartig.
-              p Das Abifestival ist mit Liebe gemacht!
-              p Wir hoffen, dass du dich bei uns wohl fühlst. 
+              p Das Abifestival ist mit &#9829; gemacht!
+              p Wir hoffen, dass du dich bei uns wohl f&uuml;hlst.
+        .section-lineup
+          .wrapper
+            h2 Lineup 2016
+            .gridster
+              ul
+                li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/kolle.jpg")
+                li(data-row='2', data-col='1', data-sizex='1', data-sizey='2')
+                  img(src="src/img/artist/mac.jpg")
+                li(data-row='3', data-col='1', data-sizex='2', data-sizey='1')
+                  img(src="src/img/artist/wiz.jpg")
+                li(data-row='3', data-col='1', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/dajuan.jpg")
+                li(data-row='3', data-col='2', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/weekend.jpg")
+                li(data-row='1', data-col='2', data-sizex='2', data-sizey='1')
+                  img(src="src/img/artist/bronson.jpg")
+                li(data-row='2', data-col='2', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/miss.jpg")
+                li(data-row='1', data-col='4', data-sizex='1', data-sizey='2')
+                  img(src="src/img/artist/marteria.jpg")
+                li(data-row='2', data-col='4', data-sizex='2', data-sizey='1')
+                  img(src="src/img/artist/kiz.jpg")
+                li(data-row='3', data-col='4', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/cas.jpg")
+                li(data-row='4', data-col='4', data-sizex='1', data-sizey='1')
+                  img(src="src/img/artist/cro.jpg")
+        
+        .section-banner
+          .wrapper
+            
     
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='js/jquery.min.js')
     script(src='bootstrap/js/bootstrap.js')
+    script(src='js/gridster.js')
     script(src='js/script.js')
     script(src='js/jquery.sticky.js')
+  
     
