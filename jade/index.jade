@@ -1,0 +1,17 @@
+//output:../index.html
+
+html 
+  head
+  title Abifestival
+  style
+    include ../css/layout.css
+    include ../css/style.css
+    include ../bootstrap/css/bootstrap.css      
+    include ../bootstrap/css/bootstrap-theme.css    
+  body
+    .video-overlay
+    video(autoplay)
+      source(src="src/video/background.mp4", type="video/mp4")
+      
+    script(src='../bootstrap/js/bootstrap.js')
+    script(src='..js/script.js')
