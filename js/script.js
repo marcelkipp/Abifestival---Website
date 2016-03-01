@@ -12,16 +12,19 @@ win.scroll(function() {
 
 $(function(){ //DOM Ready
 
+
+
   $(".gridster ul").gridster({
       widget_margins: [5, 5],
       widget_base_dimensions: [240, 240],
       max_cols: 3,
       max_rows:3
-  }).disable();
+  });
 
 });
 
 $( window ).ready(function(){
-  $('#animate').addClass('animated bounceIn');
+
+  //$('#animate').addClass('animated bounceIn');
 
 });

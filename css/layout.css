@@ -20,7 +20,7 @@ nav {
   bottom: 0px !important;
   z-index: 5;
   margin-bottom: 0px !important;
-  padding: 10px 0; }
+  padding: 0px 0; }
   nav img {
     float: left; }
   nav ul {
@@ -29,7 +29,7 @@ nav {
     cursor: pointer; }
     nav ul li {
       float: left;
-      padding: 10px 20px;
+      padding: 10px 19px;
       text-align: center; }
 
 nav.fixed {
@@ -39,7 +39,8 @@ nav.fixed {
   left: 0px;
   z-index: 999;
   margin-top: 0px;
-  height: 80px; }
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .wrapper {
   width: 1000px;
@@ -64,22 +65,28 @@ nav.fixed {
 .container-video {
   height: 100vh;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: white; }
+  color: #fff; }
+  .container-video div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .container-video img {
-    margin: 200px auto 0px;
+    margin: 0px auto 0px;
     width: 200px; }
 
 .container-other {
   height: 20000px;
   width: 100%;
-  background-color: gray; }
+  background-color: grey; }
 
 .section-intro, .section-lineup {
   padding: 100px 0; }
 
 .section-lineup {
-  background-color: white; }
+  background-color: #fff; }
 
 .section-banner {
   background-image: url(../src/img/banner.jpg);
@@ -97,33 +104,28 @@ nav.fixed {
   from, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); }
-
   20% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1); }
-
   40% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
     transform: scale3d(0.9, 0.9, 0.9); }
-
   60% {
     opacity: 1;
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
     transform: scale3d(1.03, 1.03, 1.03); }
-
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97); }
-
   to {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn; }
