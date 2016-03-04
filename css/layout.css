@@ -42,6 +42,10 @@ nav.fixed {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.9); }
 
+.video-box {
+  margin: 0px auto;
+  width: 700px; }
+
 .wrapper {
   width: 1000px;
   margin: 0px auto; }
@@ -65,9 +69,8 @@ nav.fixed {
 .container-video {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #fff; }
+  color: white; }
   .container-video div {
     position: relative;
     top: 50%;
@@ -78,21 +81,47 @@ nav.fixed {
     width: 200px; }
 
 .container-other {
-  height: 20000px;
   width: 100%;
-  background-color: grey; }
+  background-color: gray; }
 
-.section-intro, .section-lineup {
+.section-intro, .section-lineup, .section-news, .section-video, .section-sponsors {
   padding: 100px 0; }
 
 .section-lineup {
-  background-color: #fff; }
+  background-color: white; }
 
 .section-banner {
   background-image: url(../src/img/banner.jpg);
   background-size: cover;
   height: 500px;
-  cursor: pointer; }
+  cursor: pointer;
+  background-position-x: 0px;
+  transition: all 40s; }
+
+.flow {
+  background-position-x: -700px;
+  transition: all 40s; }
+
+.section-news .row div {
+  padding: 15px; }
+  .section-news .row div .news-head {
+    padding: 0px;
+    height: 200px; }
+  .section-news .row div .news-foot {
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    height: 200px;
+    padding: 20px; }
+    .section-news .row div .news-foot .box-text {
+      height: 50%; }
+
+.footer {
+  background-color: #75c2b2; }
+  .footer .wrapper {
+    background-image: url(src/img/footer.png);
+    background-size: cover;
+    height: 500px; }
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -104,28 +133,33 @@ nav.fixed {
   from, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); }
+
   20% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1); }
+
   40% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
     transform: scale3d(0.9, 0.9, 0.9); }
+
   60% {
     opacity: 1;
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
     transform: scale3d(1.03, 1.03, 1.03); }
+
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97); }
+
   to {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn; }

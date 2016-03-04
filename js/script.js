@@ -12,9 +12,7 @@ win.scroll(function() {
 
 $(function(){ //DOM Ready
 
-
-
-  $(".gridster ul").gridster({
+  $(" .gridster ul ").gridster({
       widget_margins: [5, 5],
       widget_base_dimensions: [240, 240],
       max_cols: 3,
@@ -23,8 +21,24 @@ $(function(){ //DOM Ready
 
 });
 
+function startFlow(){
+  $(" .section-banner ").addClass("flow");
+  setTimeout(function(){endlessFlow();},40000);
+}
+
+function endlessFlow(){
+  $(" .section-banner ").removeClass("flow");
+  setTimeout(function(){startFlow();},40000);
+}
+
+$( ".overlay" ).hover(function() {
+  $( this ).toggleClass("overlay-show");
+})
+
+
 $( window ).ready(function(){
 
-  //$('#animate').addClass('animated bounceIn');
+  startFlow();
+  // $('#animate').addClass('animated bounceIn');
 
 });
