@@ -29,19 +29,26 @@ html
     .content-container
       .container-video
         div#animate
-          img(src="src/img/logo.png")
-          h1 Abifestival 2016
+          img#fadeOutElement(src="src/img/logo.png")
+          h1 Abifestival 2016 
           h3 umsonst & und drau&szlig;en 
-          button.btn-video Alle Infos
+        .arrow-sontainer
+          a(href="#anker1") 
+            .arrow#bindmovingarrow
+          //- img(src="")
+        //- .container-social
       .container-other
-        .section-intro 
+        .section-intro
+          a(name="anker1") 
           .wrapper
-            .inner
-              div Abifestival am alten AKW in Lingen!
-              p Willkommen auf den Internetseiten des Abifestivals! Hier erf&auml;hrst du alles, was du &uuml;ber das Abifestival wissen musst. Sollte etwas fehlen, oder unklar sein, melde dich bei uns.
-              p Das Abifestival ist einzigartig.
-              p Das Abifestival ist mit &#9829; gemacht!
-              p Wir hoffen, dass du dich bei uns wohl f&uuml;hlst.
+            .row
+              .col-md-6.left
+                h3 Abifestival am Alten AKW Lingen
+                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                .btn + Mehr erfahren
+              .col-md-6.right
+            .points
+              img(src="src/img/points.png")
         .section-lineup
           .wrapper
             h2 Lineup 2016
@@ -144,8 +151,8 @@ html
               .col-md-4 
                 img(src="src/img/sponsoren/5.png")
         
-        //- .footer
-        //-   .wrapper
+        .footer
+          .wrapper
         //-     h2 hallo
             
     

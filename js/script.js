@@ -21,6 +21,7 @@ $(function(){ //DOM Ready
 
 });
 
+
 function startFlow(){
   $(" .section-banner ").addClass("flow");
   setTimeout(function(){endlessFlow();},40000);
@@ -38,7 +39,34 @@ $( ".overlay" ).hover(function() {
 
 $( window ).ready(function(){
 
+  $( '.section-news' ).scrollTop()
   startFlow();
   // $('#animate').addClass('animated bounceIn');
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  // var element = $("#fadeOutElement").offset().top;
+  // $(window).scroll(function(){
+  //   var y = $(window).scrollTop();
+  //     if (y >= element){
+  //       $( '#animate' ).addClass('fadeOut');
+  //       $( '.arrow-sontainer' ).addClass('fadeOut');
+  //     } else {
+  //
+  //     }
+  // });
+
 
 });
