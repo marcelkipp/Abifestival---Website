@@ -8,11 +8,12 @@ html
     link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
     link(rel='stylesheet', href='bootstrap/css/bootstrap-theme.css')
     link(rel='stylesheet', href='css/gridster.css')
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
   body
-    //- nav hallo
-    nav
-      .wrapper
-        img(src="src/img/logo.png")
+    .nav
+      .img
+        img(src="src/img/festival.png")
+      nav
         ul
           li Bandinfos
           li Anfahrt
@@ -21,10 +22,15 @@ html
           li Fragen
           li Sponsoren 
           li Mehr
-  
+      .social
+        span.fa.fa-instagram
+        span.fa.fa-twitter
+        span.fa.fa-facebook
+        span.fa.fa-youtube
+        span.fa.fa-vimeo
     .video-overlay
-    video(autoplay, loop)
-      source(src="src/video/background.mp4", type="video/mp4")
+    video(autoplay, loop, poster="src/img/boxbg.jpg")
+      //- source(src="src/video/background.mp4", type="video/mp4")
     
     .content-container
       .container-video
@@ -35,20 +41,42 @@ html
         .arrow-sontainer
           a(href="#anker1") 
             .arrow#bindmovingarrow
-          //- img(src="")
-        //- .container-social
+      
+      
       .container-other
-        .section-intro
-          a(name="anker1") 
-          .wrapper
-            .row
-              .col-md-6.left
-                h3 Abifestival am Alten AKW Lingen
-                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                .btn + Mehr erfahren
-              .col-md-6.right
-            .points
-              img(src="src/img/points.png")
+        a(name="anker1") 
+        .section-sites
+          .row
+            .col-md-4(style='background-image:url(src/img/menu/1.jpg); red; height: 300px;background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Anfahrt 
+            .col-md-5(style='background-image:url(src/img/menu/6.jpg); height: 300px; background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Zelten
+            .col-md-3(style='background-image:url(src/img/menu/4.jpg); height: 300px;background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Gel&auml;nde
+            .col-md-4(style='background-image:url(src/img/menu/3.jpg); height: 300px;background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Fragen
+            .col-md-3(style='background-image:url(src/img/menu/5.jpg); height: 300px;background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Bilder 
+            .col-md-5(style='background-image:url(src/img/menu/2.jpg); height: 300px; background-size: cover;')
+              .menu-overlay
+              .menu-overlay-text Bandinfos 
+        //- .section-intro
+        //-   a(name="anker1") 
+        //-   .wrapper
+        //-     .row
+        //-       .col-md-6.left
+        //-         h3 Abifestival am Alten AKW Lingen
+        //-         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        //-         .btn + Mehr erfahren
+        //-       .col-md-6.right
+        //-     .points
+        //-       img(src="src/img/points.png")
+        
         .section-lineup
           .wrapper
             h2 Lineup 2016
@@ -125,8 +153,6 @@ html
                     div Andere News
                   .box-btn
                     .btn-news Mehr
-        .section-banner
-          .wrapper
           
         .section-video
           .wrapper
@@ -151,6 +177,9 @@ html
               .col-md-4 
                 img(src="src/img/sponsoren/5.png")
         
+        .section-banner
+          .wrapper
+        
         .footer
           .wrapper
         //-     h2 hallo
@@ -161,5 +190,8 @@ html
     script(src='js/gridster.js')
     script(src='js/script.js')
     script(src='js/jquery.sticky.js')
+    script(src='js/visible.min.js')
+    script(src='js/isMobile.min.js')
+    script(src='js/detectMobile.js')
   
     

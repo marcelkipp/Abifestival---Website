@@ -8,12 +8,19 @@ win.scroll(function() {
     } else {
         fxel.removeClass("fixed");
     }
+
+    var visible = $( '#animate' ).visible();
+    if (visible == false)  {
+      $( '.img' ).addClass( 'img-show' );
+    } else {
+      $( '.img' ).removeClass( 'img-show' );
+    }
 });
 
 $(function(){ //DOM Ready
 
   $(" .gridster ul ").gridster({
-      widget_margins: [5, 5],
+      widget_margins: [0, 0],
       widget_base_dimensions: [240, 240],
       max_cols: 3,
       max_rows:3
@@ -32,6 +39,10 @@ function endlessFlow(){
   setTimeout(function(){startFlow();},40000);
 }
 
+function removeOverlay() {
+  $( '.video-overlay' ).remove();
+}
+
 $( ".overlay" ).hover(function() {
   $( this ).toggleClass("overlay-show");
 })
@@ -41,7 +52,9 @@ $( window ).ready(function(){
 
   $( '.section-news' ).scrollTop()
   startFlow();
+
   // $('#animate').addClass('animated bounceIn');
+
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -56,17 +69,5 @@ $( window ).ready(function(){
       }
     });
   });
-
-  // var element = $("#fadeOutElement").offset().top;
-  // $(window).scroll(function(){
-  //   var y = $(window).scrollTop();
-  //     if (y >= element){
-  //       $( '#animate' ).addClass('fadeOut');
-  //       $( '.arrow-sontainer' ).addClass('fadeOut');
-  //     } else {
-  //
-  //     }
-  // });
-
 
 });

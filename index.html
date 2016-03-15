@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>
     <link rel="stylesheet" href="css/gridster.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
   </head>
   <body>
-    <nav>
-      <div class="wrapper"><img src="src/img/logo.png"/>
+    <div class="nav">
+      <div class="img"><img src="src/img/festival.png"/></div>
+      <nav>
         <ul>
           <li>Bandinfos</li>
           <li>Anfahrt</li>
@@ -20,11 +22,11 @@
           <li>Sponsoren </li>
           <li>Mehr</li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <div class="social"><span class="fa fa-instagram"></span><span class="fa fa-twitter"></span><span class="fa fa-facebook"></span><span class="fa fa-youtube"></span><span class="fa fa-vimeo"></span></div>
+    </div>
     <div class="video-overlay"></div>
-    <video autoplay="autoplay" loop="loop">
-      <source src="src/video/background.mp4" type="video/mp4"/>
+    <video autoplay="autoplay" loop="loop" poster="src/img/boxbg.jpg">
     </video>
     <div class="content-container">
       <div class="container-video">
@@ -33,21 +35,35 @@
           <h3>umsonst & und drau&szlig;en </h3>
         </div>
         <div class="arrow-sontainer"><a href="#anker1"> 
-            <div id="bindmovingarrow" class="arrow"></div></a>
-        </div>
+            <div id="bindmovingarrow" class="arrow"></div></a></div>
       </div>
-      <div class="container-other">
-        <div class="section-intro"><a name="anker1"> </a>
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-md-6 left">
-                <h3>Abifestival am Alten AKW Lingen</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                <div class="btn">+ Mehr erfahren</div>
-              </div>
-              <div class="col-md-6 right"></div>
+      <div class="container-other"><a name="anker1"> </a>
+        <div class="section-sites">
+          <div class="row">
+            <div style="background-image:url(src/img/menu/1.jpg); red; height: 300px;background-size: cover;" class="col-md-4">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Anfahrt </div>
             </div>
-            <div class="points"><img src="src/img/points.png"/></div>
+            <div style="background-image:url(src/img/menu/6.jpg); height: 300px; background-size: cover;" class="col-md-5">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Zelten</div>
+            </div>
+            <div style="background-image:url(src/img/menu/4.jpg); height: 300px;background-size: cover;" class="col-md-3">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Gel&auml;nde</div>
+            </div>
+            <div style="background-image:url(src/img/menu/3.jpg); height: 300px;background-size: cover;" class="col-md-4">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Fragen</div>
+            </div>
+            <div style="background-image:url(src/img/menu/5.jpg); height: 300px;background-size: cover;" class="col-md-3">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Bilder </div>
+            </div>
+            <div style="background-image:url(src/img/menu/2.jpg); height: 300px; background-size: cover;" class="col-md-5">
+              <div class="menu-overlay"></div>
+              <div class="menu-overlay-text">Bandinfos </div>
+            </div>
           </div>
         </div>
         <div class="section-lineup">
@@ -155,9 +171,6 @@
             </div>
           </div>
         </div>
-        <div class="section-banner">
-          <div class="wrapper"></div>
-        </div>
         <div class="section-video">
           <div class="wrapper">
             <h2>Aftermovie 2015</h2>
@@ -179,6 +192,9 @@
             </div>
           </div>
         </div>
+        <div class="section-banner">
+          <div class="wrapper"></div>
+        </div>
         <div class="footer">
           <div class="wrapper"></div>
         </div>
@@ -190,5 +206,8 @@
     <script src="js/gridster.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.sticky.js"></script>
+    <script src="js/visible.min.js"></script>
+    <script src="js/isMobile.min.js"></script>
+    <script src="js/detectMobile.js"></script>
   </body>
 </html>

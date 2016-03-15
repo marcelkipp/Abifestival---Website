@@ -7,7 +7,7 @@ h1, h2, h4 {
 
 nav {
   background-color: white;
-  border-bottom: 1px solid black; }
+  padding: 0px; }
   nav img {
     height: 35px; }
   nav ul li {
@@ -19,6 +19,22 @@ button {
   border: 1px solid black;
   padding: 10px;
   text-align: center; }
+
+body, html {
+  margin: 0px;
+  padding: 0px; }
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 110%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  z-index: 1; }
 
 .container-video h1 {
   font-size: 65px; }
@@ -108,6 +124,29 @@ button {
   opacity: 1 !important;
   transition: all 0.5s; }
 
+.section-sites .row {
+  margin-left: 0px;
+  margin-right: 0px; }
+  .section-sites .row div {
+    padding: 0px; }
+.section-sites .menu-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-weight: 700; }
+  .section-sites .menu-overlay:hover {
+    opacity: 0;
+    transition: all 0.3s; }
+.section-sites .menu-overlay-text {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 18px;
+  padding: 0 0 20px 20px !important; }
+
 .section-lineup {
   text-align: center; }
   .section-lineup button {
@@ -121,7 +160,7 @@ button {
       margin-bottom: 30px; }
 
 .section-video {
-  background-color: #f4f4f4; }
+  background-color: #dddddd; }
   .section-video .wrapper {
     text-align: center; }
     .section-video .wrapper h2 {
@@ -131,7 +170,7 @@ button {
   margin-bottom: 30px; }
 
 .section-sponsors {
-  background-color: white; }
+  background-color: #f4f4f4; }
   .section-sponsors h2 {
     margin-bottom: 30px;
     text-align: center; }
@@ -193,14 +232,24 @@ button {
 
 @keyframes movingarrow {
   from {
-    background-position-y: 0px; }
+    background-position-y: 0px;
+    -webkit-background-position-y: 0px;
+    -moz-background-position-y: 0px; }
 
   to {
-    background-position-y: 92px; } }
+    background-position-y: 92px;
+    -webkit-background-position-y: 92px;
+    -moz-background-position-y: 92px; } }
 #bindmovingarrow {
   animation-name: movingarrow;
+  -webkit-animation-name: movingarrow;
+  -moz-animation-name: movingarrow;
   animation-duration: 1.6s;
-  animation-iteration-count: infinite; }
+  -webkit-duration: 1.6s;
+  -moz-duration: 1.6s;
+  animation-iteration-count: infinite;
+  -webkit-interation-count: infinite;
+  -moz-interation-count: infinite; }
 
 .fadeOut {
   opacity: 0;

@@ -1,50 +1,52 @@
-$abigrey: #404041
-
-body, html
-  margin: 0px
-  padding: 0px
-
-
-video
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  min-width: 110%
-  min-height: 100%
-  width: auto
-  height: auto
-  background-size: cover
-  z-index: 1
-
-nav
-  width: 100%
-  position: fixed!important
-  // bottom: 0px!important
+.nav
   z-index: 5
-  margin-bottom: 0px !important
-  padding: 2px 0
-  img
+  position: fixed
+  background-color: #fff
+  width: 100%
+  padding: 0px
+  nav
+    margin: 0px auto
+    width: 800px
+    @media screen and (max-width: 1200px)
+      width: 680px
+      display: none
+  .img
     float: left
+    position: absolute
+    background-color: #ddd
+    z-index: 10
+    margin-left: -153px
+    transition: all 0.5s
+    img
+      position: absolute
+  .img-show
+    margin-left: 0px
+    @media screen and (max-width: 1040px)
+      margin-left: -153px
+  .social
+    float: right
   ul
     list-style: none
-    margin-left: 189px
+    margin: 0px
     li
       float: left
-      padding: 10px 19px
+      padding: 10px 0
       text-align: center
+      width: 14%
     li:hover
-    cursor: pointer
-
-nav.fixed
-  position: fixed!important
-  top: 0px
-  right: 0px
-  left: 0px
-  z-index: 999
-  margin-top: 0px
-  height: 60px
-  background-color: rgba(255, 255, 255, 0.9)
+      cursor: pointer
+      background-color: #77d3c2
+      transition:  background-color 0.3s
+      color: #ffffff
+  .social
+    span
+      padding: 12px  10px
+      font-size: 20px
+      cursor: pointer
+      transition: all 0.2s
+    span:hover
+      color: #77d3c2
+      transition: all 0.2s
 
 .video-box
   margin: 0px auto
@@ -98,17 +100,21 @@ nav.fixed
     width: 200px
 
 .container-other
-  width: 100%
-  background-color: grey
+  background-image: url(../src/img/abibg.png)
+  background-size: cover
+  background-attachment: fixed
 
 .section-intro, .section-lineup, .section-news, .section-video, .section-sponsors
   padding: 100px 0
 
 .section-lineup
-  background-color: #fff
+  background-color: #ddd
   // div
   //   height: 250px
   //   background-color: red
+
+.section-sponsors
+  // background-color: #ddd!important
 
 .section-banner
   background-image: url(../src/img/banner.jpg)
