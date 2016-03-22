@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
   </head>
   <body>
+    <div class="loader">
+      <div class="signal"></div>
+    </div>
     <div class="nav">
       <div class="img"><img src="src/img/festival.png"/></div>
       <nav>
@@ -27,6 +30,7 @@
     </div>
     <div class="video-overlay"></div>
     <video autoplay="autoplay" loop="loop" poster="src/img/boxbg.jpg">
+      <source src="src/video/background.mp4" type="video/mp4"/>
     </video>
     <div class="content-container">
       <div class="container-video">
@@ -36,9 +40,9 @@
         </div>
         <div class="arrow-sontainer"><a href="#anker1"> 
             <div id="bindmovingarrow" class="arrow"></div></a></div>
-      </div>
-      <div class="container-other"><a name="anker1"> </a>
-        <div class="section-sites">
+      </div><a name="anker1"> </a>
+      <div class="section-sites">
+        <div class="container-fluid">
           <div class="row">
             <div style="background-image:url(src/img/menu/1.jpg); red; height: 300px;background-size: cover;" class="col-md-4">
               <div class="menu-overlay"></div>
@@ -62,143 +66,113 @@
             </div>
             <div style="background-image:url(src/img/menu/2.jpg); height: 300px; background-size: cover;" class="col-md-5">
               <div class="menu-overlay"></div>
-              <div class="menu-overlay-text">Bandinfos </div>
+              <div class="menu-overlay-text">Bandinfos</div>
             </div>
           </div>
         </div>
-        <div class="section-lineup">
-          <div class="wrapper">
-            <h2>Lineup 2016</h2>
-            <div class="gridster">
-              <ul>
-                <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Kollegah</div>
-                  </div><img src="src/img/artist/kolle.jpg"/>
-                </li>
-                <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
-                  <div class="overlay">
-                    <div class="line-up-content">Mac Miller</div>
-                  </div><img src="src/img/artist/mac.jpg"/>
-                </li>
-                <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Wiz Khalifa</div>
-                  </div><img src="src/img/artist/wiz.jpg"/>
-                </li>
-                <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Dajuan</div>
-                  </div><img src="src/img/artist/dajuan.jpg"/>
-                </li>
-                <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Weekend</div>
-                  </div><img src="src/img/artist/weekend.jpg"/>
-                </li>
-                <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Bronson</div>
-                  </div><img src="src/img/artist/bronson.jpg"/>
-                </li>
-                <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Miss Platnum</div>
-                  </div><img src="src/img/artist/miss.jpg"/>
-                </li>
-                <li data-row="1" data-col="4" data-sizex="1" data-sizey="2">
-                  <div class="overlay">
-                    <div class="line-up-content">Marteria</div>
-                  </div><img src="src/img/artist/marteria.jpg"/>
-                </li>
-                <li data-row="2" data-col="4" data-sizex="2" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">KIZ</div>
-                  </div><img src="src/img/artist/kiz.jpg"/>
-                </li>
-                <li data-row="3" data-col="4" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Casper</div>
-                  </div><img src="src/img/artist/cas.jpg"/>
-                </li>
-                <li data-row="4" data-col="4" data-sizex="1" data-sizey="1">
-                  <div class="overlay">
-                    <div class="line-up-content">Cro</div>
-                  </div><img src="src/img/artist/cro.jpg"/>
-                </li>
-              </ul>
+      </div>
+      <div class="section-lineup">
+        <h2>Lineup 2016</h2>
+        <div class="container">
+          <div class="row">
+            <div style="background-image: url(src/img/artist/miss.jpg); background-size: cover;" class="col-xs-3 col-sm-3">
+              <div class="overlay">
+                <div class="line-up-content">Kollegah</div>
+              </div>
             </div>
-            <div class="btn">+ Mehr</div>
+            <div style="background-image: url(src/img/artist/kolle.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/mac.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/wiz.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/dajuan.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/weekend.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/bronson.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/miss.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/marteria.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/cro.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/kiz.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
+            <div style="background-image: url(src/img/artist/cas.jpg); background-size: cover;" class="col-xs-3 col-sm-3"></div>
           </div>
         </div>
-        <div class="section-news">
-          <div class="wrapper">
-            <h2>News</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div style="background-image: url(src/img/plakat.png)" class="news-head"></div>
-                <div class="news-foot">
-                  <div class="box-text"> 
-                    <div>Zelten auf dem Abifestival</div>
-                  </div>
-                  <div class="box-btn">
-                    <div class="btn-news">Mehr</div>
-                  </div>
+        <div class="btn">+ Mehr</div>
+      </div>
+      <div class="section-news">
+        <div class="container">
+          <h2>News</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <div style="background-image: url(src/img/plakat.png)" class="news-head"></div>
+              <div class="news-foot">
+                <div class="box-text"> 
+                  <div>Zelten auf dem Abifestival</div>
+                </div>
+                <div class="box-btn">
+                  <div class="btn-news">Mehr</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div style="background-image: url(src/img/plakat2.png)" class="news-head"></div>
-                <div class="news-foot">
-                  <div class="box-text"> 
-                    <div>Abifestival-App</div>
-                  </div>
-                  <div class="box-btn">
-                    <div class="btn-news">Mehr</div>
-                  </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="background-image: url(src/img/plakat2.png)" class="news-head"></div>
+              <div class="news-foot">
+                <div class="box-text"> 
+                  <div>Abifestival-App</div>
+                </div>
+                <div class="box-btn">
+                  <div class="btn-news">Mehr</div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div style="background-image: url(src/img/plakat2.png)" class="news-head"></div>
-                <div class="news-foot">
-                  <div class="box-text"> 
-                    <div>Andere News</div>
-                  </div>
-                  <div class="box-btn">
-                    <div class="btn-news">Mehr</div>
-                  </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="background-image: url(src/img/plakat2.png)" class="news-head"></div>
+              <div class="news-foot">
+                <div class="box-text"> 
+                  <div>Andere News</div>
+                </div>
+                <div class="box-btn">
+                  <div class="btn-news">Mehr</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="section-video">
-          <div class="wrapper">
-            <h2>Aftermovie 2015</h2>
-            <div class="video-box">
-              <iframe src="https://player.vimeo.com/video/136583980?byline=0" width="700" height="393" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+      <div class="section-video">
+        <h2>Aftermovie 2015</h2>
+        <div class="container"> 
+          <div class="video-box">
+            <iframe src="https://player.vimeo.com/video/136583980?byline=0" width="100%" height="650" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="section-sponsors">
+        <div class="container">
+          <h2>Sponsoren</h2>
+          <div class="row">
+            <div class="col-xs-4"><img src="src/img/sponsoren/1.png"/></div>
+            <div class="col-xs-4"><img src="src/img/sponsoren/2.png"/></div>
+            <div class="col-xs-4"><img src="src/img/sponsoren/3.png"/></div>
+            <div class="col-xs-4"> <img src="src/img/sponsoren/4.png"/></div>
+            <div class="col-xs-4"><img src="src/img/sponsoren/6.png"/></div>
+            <div class="col-xs-4"> <img src="src/img/sponsoren/5.png"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-banner">
+        <div class="wrapper"></div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div>Footer Bar One</div>
+            </div>
+            <div class="col-sm-4">
+              <div>Footer Bar Two</div>
+            </div>
+            <div class="col-sm-4">
+              <div>Footer Bar Three</div>
             </div>
           </div>
         </div>
-        <div class="section-sponsors">
-          <div class="wrapper">
-            <div class="row">
-              <h2>Sponsoren</h2>
-              <div class="col-md-4"><img src="src/img/sponsoren/1.png"/></div>
-              <div class="col-md-4"><img src="src/img/sponsoren/2.png"/></div>
-              <div class="col-md-4"><img src="src/img/sponsoren/3.png"/></div>
-              <div class="col-md-4"> <img src="src/img/sponsoren/4.png"/></div>
-              <div class="col-md-4"><img src="src/img/sponsoren/6.png"/></div>
-              <div class="col-md-4"> <img src="src/img/sponsoren/5.png"/></div>
-            </div>
-          </div>
-        </div>
-        <div class="section-banner">
-          <div class="wrapper"></div>
-        </div>
-        <div class="footer">
-          <div class="wrapper"></div>
-        </div>
-        
       </div>
     </div>
     <script src="js/jquery.min.js"></script>

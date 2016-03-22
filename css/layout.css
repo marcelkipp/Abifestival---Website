@@ -4,6 +4,9 @@
   background-color: white;
   width: 100%;
   padding: 0px; }
+  @media screen and (max-width: 990px) {
+    .nav {
+      display: none; } }
   .nav nav {
     margin: 0px auto;
     width: 800px; }
@@ -49,9 +52,45 @@
     color: #77d3c2;
     transition: all 0.2s; }
 
+.nav-mobile {
+  position: fixed;
+  background-color: white;
+  z-index: 20;
+  width: 100%; }
+  .nav-mobile .main-nav-mobile {
+    width: 100%; }
+    .nav-mobile .main-nav-mobile img {
+      height: 100px; }
+    .nav-mobile .main-nav-mobile .main-nav-btn {
+      float: right; }
+      .nav-mobile .main-nav-mobile .main-nav-btn img {
+        height: 100px; }
+  .nav-mobile .social-mobile {
+    width: 100%;
+    height: 100px; }
+    .nav-mobile .social-mobile div {
+      float: right;
+      padding: 20px 0; }
+    .nav-mobile .social-mobile span {
+      font-size: 45px;
+      padding: 0px 20px; }
+
+.nav-mobile-sildeout {
+  position: fixed;
+  z-index: 19;
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  top: -500px;
+  transition: all 0.3s; }
+
+.nav-mobile-sildeout-in {
+  top: 0px;
+  transition: all 0.3s; }
+
 .video-box {
   margin: 0px auto;
-  width: 700px; }
+  width: 100%; }
 
 .wrapper {
   width: 1000px;
@@ -107,6 +146,12 @@
 .section-lineup {
   background-color: #dddddd; }
 
+.section-sponsors .row div {
+  text-align: center; }
+@media screen and (max-width: 990px) {
+  .section-sponsors img {
+    width: 200px; } }
+
 .section-banner {
   background-image: url(../src/img/banner.jpg);
   background-size: cover;
@@ -134,11 +179,67 @@
       height: 50%; }
 
 .footer {
-  background-color: #75c2b2; }
-  .footer .wrapper {
-    background-image: url(src/img/footer.png);
-    background-size: cover;
-    height: 500px; }
+  width: 100%;
+  background-color: white; }
+  @media screen and (max-width: 990px) {
+    .footer .container {
+      width: 100%; } }
+  .footer .col-sm-4 {
+    margin: 40px 0; }
+    .footer .col-sm-4 div {
+      background-color: #dddddd;
+      height: 350px; }
+
+.loader {
+  position: absolute;
+  background-color: #75c2b2;
+  height: 100%;
+  width: 100%;
+  z-index: 100; }
+
+@media screen and (max-width: 990px) {
+  .section-lineup .container, .section-news .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
+  @media screen and (max-width: 990px) and (max-width: 990px) {
+    .section-lineup .container, .section-news .container {
+      width: 100% !important; } }
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.gridster {
+  width: 1000px;
+  margin: 0px auto; }
+  @media screen and (max-width: 990px) {
+    .gridster {
+      width: 500px; } }
+
+.section-lineup .overlay {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  transition: all 0.5s;
+  cursor: pointer; }
+.section-lineup .line-up-content {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-bottom: 20px; }
+.section-lineup .col-xs-3 {
+  height: 250px;
+  padding: 0px !important;
+  background-color: gray; }
+.section-lineup .row {
+  margin: 0px !important; }
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -180,3 +281,28 @@
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn; }
+
+.signal {
+  border: 5px solid white;
+  border-radius: 30px;
+  height: 30px;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  animation: pulsate 1.3s ease-out;
+  animation-iteration-count: infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }

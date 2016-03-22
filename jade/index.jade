@@ -10,6 +10,21 @@ html
     link(rel='stylesheet', href='css/gridster.css')
     link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
   body
+    .loader
+      .signal
+    //- .nav-mobile
+    //-   .social-mobile
+    //-     div
+    //-       span.fa.fa-instagram
+    //-       span.fa.fa-twitter
+    //-       span.fa.fa-facebook
+    //-       span.fa.fa-youtube
+    //-       span.fa.fa-vimeo
+    //-   .main-nav-mobile
+    //-     img(src="src/img/festival.png")
+    //-     .main-nav-btn
+    //-       img(src="src/img/festival-logo.png")
+    //- .nav-mobile-sildeout hallo
     .nav
       .img
         img(src="src/img/festival.png")
@@ -30,7 +45,7 @@ html
         span.fa.fa-vimeo
     .video-overlay
     video(autoplay, loop, poster="src/img/boxbg.jpg")
-      //- source(src="src/video/background.mp4", type="video/mp4")
+      source(src="src/video/background.mp4", type="video/mp4")
     
     .content-container
       .container-video
@@ -42,10 +57,9 @@ html
           a(href="#anker1") 
             .arrow#bindmovingarrow
       
-      
-      .container-other
-        a(name="anker1") 
-        .section-sites
+      a(name="anker1") 
+      .section-sites
+        .container-fluid
           .row
             .col-md-4(style='background-image:url(src/img/menu/1.jpg); red; height: 300px;background-size: cover;')
               .menu-overlay
@@ -64,125 +78,135 @@ html
               .menu-overlay-text Bilder 
             .col-md-5(style='background-image:url(src/img/menu/2.jpg); height: 300px; background-size: cover;')
               .menu-overlay
-              .menu-overlay-text Bandinfos 
-        //- .section-intro
-        //-   a(name="anker1") 
-        //-   .wrapper
-        //-     .row
-        //-       .col-md-6.left
-        //-         h3 Abifestival am Alten AKW Lingen
-        //-         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        //-         .btn + Mehr erfahren
-        //-       .col-md-6.right
-        //-     .points
-        //-       img(src="src/img/points.png")
-        
-        .section-lineup
-          .wrapper
-            h2 Lineup 2016
-            .gridster
-              ul
-                li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Kollegah
-                  img(src="src/img/artist/kolle.jpg")
-                li(data-row='2', data-col='1', data-sizex='1', data-sizey='2')
-                  .overlay
-                    .line-up-content Mac Miller
-                  img(src="src/img/artist/mac.jpg")
-                li(data-row='3', data-col='1', data-sizex='2', data-sizey='1')
-                  .overlay
-                    .line-up-content Wiz Khalifa
-                  img(src="src/img/artist/wiz.jpg")
-                li(data-row='3', data-col='1', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Dajuan
-                  img(src="src/img/artist/dajuan.jpg")
-                li(data-row='3', data-col='2', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Weekend
-                  img(src="src/img/artist/weekend.jpg")
-                li(data-row='1', data-col='2', data-sizex='2', data-sizey='1')
-                  .overlay
-                    .line-up-content Bronson
-                  img(src="src/img/artist/bronson.jpg")
-                li(data-row='2', data-col='2', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Miss Platnum
-                  img(src="src/img/artist/miss.jpg")
-                li(data-row='1', data-col='4', data-sizex='1', data-sizey='2')
-                  .overlay
-                    .line-up-content Marteria
-                  img(src="src/img/artist/marteria.jpg")
-                li(data-row='2', data-col='4', data-sizex='2', data-sizey='1')
-                  .overlay
-                    .line-up-content KIZ
-                  img(src="src/img/artist/kiz.jpg")
-                li(data-row='3', data-col='4', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Casper
-                  img(src="src/img/artist/cas.jpg")
-                li(data-row='4', data-col='4', data-sizex='1', data-sizey='1')
-                  .overlay
-                    .line-up-content Cro
-                  img(src="src/img/artist/cro.jpg")
-            .btn + Mehr
-            
-        .section-news
-          .wrapper
-            h2 News
+              .menu-overlay-text Bandinfos
+      
+      .section-lineup
+          h2 Lineup 2016
+          .container
             .row
-              .col-md-4
-                .news-head(style='background-image: url(src/img/plakat.png)')
-                .news-foot
-                  .box-text 
-                    div Zelten auf dem Abifestival
-                  .box-btn
-                    .btn-news Mehr
-              .col-md-4
-                .news-head(style='background-image: url(src/img/plakat2.png)')
-                .news-foot
-                  .box-text 
-                    div Abifestival-App
-                  .box-btn
-                    .btn-news Mehr
-              .col-md-4
-                .news-head(style='background-image: url(src/img/plakat2.png)')
-                .news-foot
-                  .box-text 
-                    div Andere News
-                  .box-btn
-                    .btn-news Mehr
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/miss.jpg); background-size: cover;')
+                .overlay
+                  .line-up-content Kollegah
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/kolle.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/mac.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/wiz.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/dajuan.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/weekend.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/bronson.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/miss.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/marteria.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/cro.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/kiz.jpg); background-size: cover;')
+              .col-xs-3.col-sm-3(style='background-image: url(src/img/artist/cas.jpg); background-size: cover;')
+          //- .gridster
+            ul
+              li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Kollegah
+                img(src="src/img/artist/kolle.jpg")
+              li(data-row='2', data-col='1', data-sizex='1', data-sizey='2')
+                .overlay
+                  .line-up-content Mac Miller
+                img(src="src/img/artist/mac.jpg")
+              li(data-row='3', data-col='1', data-sizex='2', data-sizey='1')
+                .overlay
+                  .line-up-content Wiz Khalifa
+                img(src="src/img/artist/wiz.jpg")
+              li(data-row='3', data-col='1', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Dajuan
+                img(src="src/img/artist/dajuan.jpg")
+              li(data-row='3', data-col='2', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Weekend
+                img(src="src/img/artist/weekend.jpg")
+              li(data-row='1', data-col='2', data-sizex='2', data-sizey='1')
+                .overlay
+                  .line-up-content Bronson
+                img(src="src/img/artist/bronson.jpg")
+              li(data-row='2', data-col='2', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Miss Platnum
+                img(src="src/img/artist/miss.jpg")
+              li(data-row='1', data-col='4', data-sizex='1', data-sizey='2')
+                .overlay
+                  .line-up-content Marteria
+                img(src="src/img/artist/marteria.jpg")
+              li(data-row='2', data-col='4', data-sizex='2', data-sizey='1')
+                .overlay
+                  .line-up-content KIZ
+                img(src="src/img/artist/kiz.jpg")
+              li(data-row='3', data-col='4', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Casper
+                img(src="src/img/artist/cas.jpg")
+              li(data-row='4', data-col='4', data-sizex='1', data-sizey='1')
+                .overlay
+                  .line-up-content Cro
+                img(src="src/img/artist/cro.jpg")
+          .btn + Mehr
           
-        .section-video
-          .wrapper
-            h2 Aftermovie 2015
+      .section-news
+        .container
+          h2 News
+          .row
+            .col-sm-4
+              .news-head(style='background-image: url(src/img/plakat.png)')
+              .news-foot
+                .box-text 
+                  div Zelten auf dem Abifestival
+                .box-btn
+                  .btn-news Mehr
+            .col-sm-4
+              .news-head(style='background-image: url(src/img/plakat2.png)')
+              .news-foot
+                .box-text 
+                  div Abifestival-App
+                .box-btn
+                  .btn-news Mehr
+            .col-sm-4
+              .news-head(style='background-image: url(src/img/plakat2.png)')
+              .news-foot
+                .box-text 
+                  div Andere News
+                .box-btn
+                  .btn-news Mehr
+
+      .section-video
+          h2 Aftermovie 2015
+          .container  
             .video-box
-              iframe(src='https://player.vimeo.com/video/136583980?byline=0', width='700', height='393', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
-          
-        .section-sponsors
-          .wrapper
-            .row
-              h2 Sponsoren
-              .col-md-4
-                img(src="src/img/sponsoren/1.png")
-              .col-md-4
-                img(src="src/img/sponsoren/2.png")
-              .col-md-4
-                img(src="src/img/sponsoren/3.png")
-              .col-md-4 
-                img(src="src/img/sponsoren/4.png")
-              .col-md-4
-                img(src="src/img/sponsoren/6.png")
-              .col-md-4 
-                img(src="src/img/sponsoren/5.png")
-        
-        .section-banner
-          .wrapper
-        
-        .footer
-          .wrapper
-        //-     h2 hallo
+              iframe(src='https://player.vimeo.com/video/136583980?byline=0', width='100%', height='650', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+      .section-sponsors
+        .container
+          h2 Sponsoren
+          .row
+            .col-xs-4
+              img(src="src/img/sponsoren/1.png")
+            .col-xs-4
+              img(src="src/img/sponsoren/2.png")
+            .col-xs-4
+              img(src="src/img/sponsoren/3.png")
+            .col-xs-4 
+              img(src="src/img/sponsoren/4.png")
+            .col-xs-4
+              img(src="src/img/sponsoren/6.png")
+            .col-xs-4 
+              img(src="src/img/sponsoren/5.png")
+      
+      .section-banner
+        .wrapper
+      
+      .footer
+        .container
+          .row
+            .col-sm-4
+              div Footer Bar One
+            .col-sm-4
+              div Footer Bar Two
+            .col-sm-4
+              div Footer Bar Three
             
     
     script(src='js/jquery.min.js')
